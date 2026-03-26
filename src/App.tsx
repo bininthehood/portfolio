@@ -28,6 +28,7 @@ const PROJECTS = [
     subtitle: "운영 웹 시스템",
     role: "웹 애플리케이션 개발",
     tech: ["Java", "Spring MVC", "JSP", "MyBatis", "MariaDB"],
+    repoUrl: "https://github.com/bininthehood/voice-operations-platform",
     description: "음성 녹취 및 관리 업무를 지원하는 Java 기반 운영 웹 시스템입니다. 사용자, 세션, 정책, 파일, 서버, 로그 등 여러 운영 모듈이 연결된 실무형 구조를 다뤘습니다.",
     details: [
       "사용자·세션·권한 정책이 포함된 운영용 웹 흐름을 다뤘습니다.",
@@ -42,6 +43,7 @@ const PROJECTS = [
     subtitle: "Windows 녹취 클라이언트",
     role: "데스크톱 클라이언트 개발",
     tech: ["C#", "WPF", "NAudio", "Windows Audio", "System Tray"],
+    repoUrl: "https://github.com/bininthehood/recording-desktop-client",
     description: "오디오 장치 제어와 녹음 흐름 관리를 위한 Windows 데스크톱 클라이언트입니다. 로컬 환경의 입력·출력 장치 상태와 서버 연동 흐름을 함께 다루는 애플리케이션입니다.",
     details: [
       "입력·출력 장치 탐색, 볼륨·뮤트 제어, 오디오 레벨 모니터링 기능을 구현했습니다.",
@@ -51,18 +53,19 @@ const PROJECTS = [
     framing: "실시간 장치 제어와 녹음 흐름을 다루는 데스크톱 애플리케이션"
   },
   {
-    id: "arcflow",
-    title: "Legacy Operations Platform",
-    subtitle: "레거시 운영 시스템",
-    role: "레거시 시스템 분석 및 개선",
-    tech: ["Java", "Spring MVC", "JSP", "MyBatis", "Monitoring"],
-    description: "운영·모니터링·스토리지 관리 기능을 포함한 레거시 웹 시스템입니다. 복잡한 구조를 분석하고, 운영성 기능과 개선 포인트를 중심으로 이해해온 프로젝트입니다.",
+    id: "engine",
+    title: "Voice Processing Engine",
+    subtitle: "처리 계층 / 엔진 구조",
+    role: "엔진 구조 이해 및 처리 흐름 파악",
+    tech: ["Java", "TCP", "Worker", "File Processing", "Engine Layer"],
+    repoUrl: "https://github.com/bininthehood/voice-processing-engine",
+    description: "음성 녹취 시스템의 처리 계층을 담당하는 엔진 구조입니다. 데이터 전달, 파일 처리, 서버/워커 기반 흐름을 이해하며 시스템 전체 신뢰성에 미치는 영향을 파악한 프로젝트입니다.",
     details: [
-      "모니터링, 스토리지, 백업 등 운영성 기능이 포함된 구조를 다뤘습니다.",
-      "공통 처리 계층과 정책성 로직이 섞인 레거시 구조를 분석하며 개선 포인트를 정리했습니다.",
-      "현대화가 필요한 기존 시스템을 기능 단위로 이해하고 다루는 경험을 쌓았습니다."
+      "웹과 클라이언트 사이에서 동작하는 처리 계층의 역할을 이해했습니다.",
+      "TCP, 서버/워커 구조, 파일·데이터 전달 흐름을 중심으로 시스템을 파악했습니다.",
+      "처리 계층이 전체 운영 안정성과 신뢰성에 얼마나 중요한지 체감한 프로젝트였습니다."
     ],
-    framing: "운영 기능과 개선 과제가 함께 있는 레거시 시스템"
+    framing: "눈에 보이지 않는 처리 구조가 시스템 전체를 떠받치는 엔진 계층"
   }
 ];
 
@@ -197,6 +200,17 @@ export default function App() {
                       </span>
                     ))}
                   </div>
+
+                  <div className="pt-6">
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-sm font-medium text-black/70 hover:text-black transition-colors"
+                    >
+                      GitHub 보기 <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
                 </div>
 
                 <div className="lg:col-span-7">
@@ -300,10 +314,10 @@ export default function App() {
                 <Mail className="w-5 h-5" /> dusgod30@gmail.com
               </a>
               <div className="flex items-center gap-4">
-                <a href="#" className="p-4 border border-black/10 rounded-full hover:bg-black/5 transition-colors">
+                <a href="https://github.com/bininthehood" target="_blank" rel="noreferrer" className="p-4 border border-black/10 rounded-full hover:bg-black/5 transition-colors">
                   <Github className="w-6 h-6" />
                 </a>
-                <a href="#" className="p-4 border border-black/10 rounded-full hover:bg-black/5 transition-colors">
+                <a href="https://portfolio-orpin-six-99.vercel.app/" target="_blank" rel="noreferrer" className="p-4 border border-black/10 rounded-full hover:bg-black/5 transition-colors">
                   <ExternalLink className="w-6 h-6" />
                 </a>
               </div>
