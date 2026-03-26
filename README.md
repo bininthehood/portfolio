@@ -1,20 +1,58 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 임현빈 포트폴리오
 
-# Run and deploy your AI Studio app
+실무형 시스템 개발 경험을 정리한 개인 포트폴리오 사이트입니다.
 
-This contains everything you need to run your app locally.
+이 포트폴리오는 단순한 기술 나열보다,
+**운영 환경에서 실제로 사용되는 시스템을 만들고 개선해온 경험**을 보여주는 데 초점을 두고 있습니다.
 
-View your app in AI Studio: https://ai.studio/apps/de3b1614-d47a-4982-9d89-8b37f9692e5a
+## 소개
 
-## Run Locally
+포트폴리오의 핵심 방향은 다음과 같습니다.
 
-**Prerequisites:**  Node.js
+- 실무 시스템 중심의 개발 경험 정리
+- 운영 문제와 워크플로우 개선 관점 강조
+- 레거시 구조 이해 및 개선 경험 소개
+- 웹, 클라이언트, 운영 기능을 함께 다뤄온 개발자로서의 포지셔닝
 
+## 포함된 주요 프로젝트
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **VoiceLogWeb**
+  - 음성 녹취 및 관리 업무를 지원하는 운영 웹 시스템
+  - 사용자, 세션, 정책, 파일, 서버, 로그 등 여러 운영 모듈을 포함
+
+- **RecordClient v1.1**
+  - Windows 기반 녹취 클라이언트
+  - 오디오 장치 제어, 녹음 흐름 관리, 시스템 트레이, 서버 연동 기능 포함
+
+- **ArcFlow Web v1.2**
+  - 운영·모니터링·스토리지 관리 기능을 포함한 레거시 웹 시스템
+  - 구조 분석과 개선 가능성을 중심으로 정리한 프로젝트
+
+## 기술 스택
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+
+## 로컬 실행 방법
+
+```bash
+npm install
+npm run dev
+```
+
+기본 실행 주소:
+
+```bash
+http://localhost:3000
+```
+
+## 배포
+
+Vercel을 통해 배포 중이며, GitHub `main` 브랜치에 푸시하면 반영되는 구조입니다.
+
+## 목적
+
+이 사이트는 재취업을 위한 포트폴리오를 우선 목표로 하며,
+향후에는 프로젝트 상세 설명, GitHub 링크, 관련 문서 연결 등을 단계적으로 보강할 예정입니다.
