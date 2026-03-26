@@ -24,7 +24,7 @@ import {
 const PROJECTS = [
   {
     id: "voicelog",
-    title: "VoiceLogWeb",
+    title: "Voice Operations Platform",
     subtitle: "운영 웹 시스템",
     role: "웹 애플리케이션 개발",
     tech: ["Java", "Spring MVC", "JSP", "MyBatis", "MariaDB"],
@@ -38,7 +38,7 @@ const PROJECTS = [
   },
   {
     id: "recordclient",
-    title: "RecordClient v1.1",
+    title: "Recording Desktop Client",
     subtitle: "Windows 녹취 클라이언트",
     role: "데스크톱 클라이언트 개발",
     tech: ["C#", "WPF", "NAudio", "Windows Audio", "System Tray"],
@@ -52,7 +52,7 @@ const PROJECTS = [
   },
   {
     id: "arcflow",
-    title: "ArcFlow Web v1.2",
+    title: "Legacy Operations Platform",
     subtitle: "레거시 운영 시스템",
     role: "레거시 시스템 분석 및 개선",
     tech: ["Java", "Spring MVC", "JSP", "MyBatis", "Monitoring"],

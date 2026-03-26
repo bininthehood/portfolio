@@ -16,15 +16,15 @@
 
 ## 포함된 주요 프로젝트
 
-- **VoiceLogWeb**
+- **Voice Operations Platform**
   - 음성 녹취 및 관리 업무를 지원하는 운영 웹 시스템
   - 사용자, 세션, 정책, 파일, 서버, 로그 등 여러 운영 모듈을 포함
 
-- **RecordClient v1.1**
+- **Recording Desktop Client**
   - Windows 기반 녹취 클라이언트
   - 오디오 장치 제어, 녹음 흐름 관리, 시스템 트레이, 서버 연동 기능 포함
 
-- **ArcFlow Web v1.2**
+- **Legacy Operations Platform**
   - 운영·모니터링·스토리지 관리 기능을 포함한 레거시 웹 시스템
   - 구조 분석과 개선 가능성을 중심으로 정리한 프로젝트
 
